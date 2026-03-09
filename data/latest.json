@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "week": "2026년 3월 2주차",
+    "period": "03.02 – 03.08",
+    "published": "2026.03.09"
+  },
+  "page": {
+    "title": "GC 헬스 데이터 허브"
+  },
+  "symptoms": [
+    { "icon": "🤧", "label": "비염",      "direction": "down", "value": "▼ 16%" },
+    { "icon": "😩", "label": "피로",      "direction": "up",   "value": "▲ 16%" },
+    { "icon": "😵", "label": "미름, 창영","direction": "up",   "value": "▲ 10%" },
+    { "icon": "💔", "label": "착망",      "direction": "up",   "value": "▲ 10%" },
+    { "icon": "🤔", "label": "반정",      "direction": "down", "value": "▼ 10%" },
+    { "icon": "🩸", "label": "등당",      "direction": "down", "value": "▼ 10%" }
+  ],
+  "heatmap": {
+    "title": "한국 건강 이열래",
+    "source": "출처: Elite Wenng Chart, 2022",
+    "legend": [
+      { "color": "#00695C", "label": "700" },
+      { "color": "#00897B", "label": "800" },
+      { "color": "#4DB6AC", "label": "600" },
+      { "color": "#80CBC4", "label": "400" },
+      { "color": "#B2DFDB", "label": "200" },
+      { "color": "#E53935", "label": "0"   }
+    ]
+  },
+  "healthDebt": {
+    "source": "출처: Blood Sugar Levels (2017)"
+  },
+  "activeSaver": {
+    "source": "출처: 5-Year Health Improvement (2023)"
+  },
+  "prescription": {
+    "items": [
+      { "label": "약국 실시간 처방 현황로 지근 추이", "value": "+12.0%", "direction": "up"   },
+      { "label": "약국 실시간 처방 현황로 지근 추이", "value": "-20.0%", "direction": "down" }
+    ]
+  }
+}
