@@ -30,8 +30,14 @@ def get_week_info():
     }
 
 def fetch_kdca_symptoms():
-    url = "https://api.odcloud.kr/api/15098444/v1/uddi:e477b001-8c92-4d25-9f44-3bef7a9b0e90"
-    params = {"page": 1, "perPage": 10, "serviceKey": KDCA_API_KEY}
+    url = "https://apis.data.go.kr/1790387/EIDAPIService/getEIDDisByDiseaseInqire"
+    params = {
+    "serviceKey": KDCA_API_KEY,
+    "pageNo": 1,
+    "numOfRows": 10,
+    "startCreateDt": (datetime.today() - timedelta(days=14)).strftime("%Y%m%d"),
+    "endCreateDt": datetime.today().strftime("%Y%m%d"),
+}
     try:
         res = requests.get(url, params=params, timeout=10)
         print(f"[KDCA] HTTP status: {res.status_code}")
