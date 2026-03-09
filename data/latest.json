@@ -1,42 +1,176 @@
 {
   "meta": {
     "week": "2026년 3월 2주차",
-    "period": "03.02 – 03.08",
+    "period": "03.09 – 03.15",
     "published": "2026.03.09"
   },
   "page": {
     "title": "GC 헬스 데이터 허브"
   },
   "symptoms": [
-    { "icon": "🤧", "label": "비염",      "direction": "down", "value": "▼ 16%" },
-    { "icon": "😩", "label": "피로",      "direction": "up",   "value": "▲ 16%" },
-    { "icon": "😵", "label": "미름, 창영","direction": "up",   "value": "▲ 10%" },
-    { "icon": "💔", "label": "착망",      "direction": "up",   "value": "▲ 10%" },
-    { "icon": "🤔", "label": "반정",      "direction": "down", "value": "▼ 10%" },
-    { "icon": "🩸", "label": "등당",      "direction": "down", "value": "▼ 10%" }
+    {
+      "icon": "🤧",
+      "label": "인플루엔자",
+      "direction": "up",
+      "value": "▲ 18.2%"
+    },
+    {
+      "icon": "😷",
+      "label": "코로나19",
+      "direction": "down",
+      "value": "▼ 5.1%"
+    },
+    {
+      "icon": "🫁",
+      "label": "폐렴",
+      "direction": "up",
+      "value": "▲ 9.4%"
+    },
+    {
+      "icon": "🤢",
+      "label": "장염",
+      "direction": "down",
+      "value": "▼ 3.7%"
+    },
+    {
+      "icon": "👁️",
+      "label": "결막염",
+      "direction": "up",
+      "value": "▲ 6.8%"
+    },
+    {
+      "icon": "🖐️",
+      "label": "수족구",
+      "direction": "down",
+      "value": "▼ 11.3%"
+    }
   ],
   "heatmap": {
-    "title": "한국 건강 이열래",
-    "source": "출처: Elite Wenng Chart, 2022",
+    "title": "도별 주요 질환 현황",
+    "source": "출처: 심사평가원 다빈도 상병통계 / KDCA",
+    "regional": {
+      "서울": {
+        "disease": "피로·스트레스",
+        "pct": 41.2,
+        "level": "very_high"
+      },
+      "경기도": {
+        "disease": "비염",
+        "pct": 34.5,
+        "level": "high"
+      },
+      "인천": {
+        "disease": "고혈압",
+        "pct": 22.8,
+        "level": "medium"
+      },
+      "강원도": {
+        "disease": "관절염",
+        "pct": 28.3,
+        "level": "medium"
+      },
+      "충청북도": {
+        "disease": "당뇨",
+        "pct": 19.7,
+        "level": "low"
+      },
+      "충청남도": {
+        "disease": "비염",
+        "pct": 25.1,
+        "level": "medium"
+      },
+      "대전·세종": {
+        "disease": "고혈압",
+        "pct": 18.4,
+        "level": "low"
+      },
+      "전라북도": {
+        "disease": "피부염",
+        "pct": 21.9,
+        "level": "medium"
+      },
+      "전라남도": {
+        "disease": "관절염",
+        "pct": 35.7,
+        "level": "high"
+      },
+      "광주": {
+        "disease": "비염",
+        "pct": 16.2,
+        "level": "low"
+      },
+      "경상북도": {
+        "disease": "당뇨",
+        "pct": 31.4,
+        "level": "high"
+      },
+      "대구": {
+        "disease": "고혈압",
+        "pct": 24.6,
+        "level": "medium"
+      },
+      "울산": {
+        "disease": "근골격",
+        "pct": 29.8,
+        "level": "medium"
+      },
+      "경상남도": {
+        "disease": "피로",
+        "pct": 27.3,
+        "level": "medium"
+      },
+      "부산": {
+        "disease": "고혈압",
+        "pct": 33.1,
+        "level": "high"
+      },
+      "제주도": {
+        "disease": "비염",
+        "pct": 14.8,
+        "level": "very_low"
+      }
+    },
     "legend": [
-      { "color": "#00695C", "label": "700" },
-      { "color": "#00897B", "label": "800" },
-      { "color": "#4DB6AC", "label": "600" },
-      { "color": "#80CBC4", "label": "400" },
-      { "color": "#B2DFDB", "label": "200" },
-      { "color": "#E53935", "label": "0"   }
+      {
+        "color": "#0D47A1",
+        "label": "매우 높음"
+      },
+      {
+        "color": "#1976D2",
+        "label": "높음"
+      },
+      {
+        "color": "#42A5F5",
+        "label": "보통"
+      },
+      {
+        "color": "#80CBC4",
+        "label": "낮음"
+      },
+      {
+        "color": "#B2EBF2",
+        "label": "매우 낮음"
+      }
     ]
   },
   "healthDebt": {
-    "source": "출처: Blood Sugar Levels (2017)"
+    "source": "출처: 국민건강보험공단 건강검진통계 2024"
   },
   "activeSaver": {
-    "source": "출처: 5-Year Health Improvement (2023)"
+    "source": "출처: 국민건강보험공단 5년 연속 수검자 추적 2023"
   },
   "prescription": {
     "items": [
-      { "label": "약국 실시간 처방 현황로 지근 추이", "value": "+12.0%", "direction": "up"   },
-      { "label": "약국 실시간 처방 현황로 지근 추이", "value": "-20.0%", "direction": "down" }
+      {
+        "label": "항생제 처방 건수 전주 대비",
+        "value": "+12.0%",
+        "direction": "up"
+      },
+      {
+        "label": "해열·진통제 처방 건수",
+        "value": "-8.3%",
+        "direction": "down"
+      }
     ]
   }
 }
