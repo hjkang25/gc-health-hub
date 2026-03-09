@@ -34,6 +34,8 @@ def fetch_kdca_symptoms():
     params = {"page": 1, "perPage": 10, "serviceKey": KDCA_API_KEY}
     try:
         res = requests.get(url, params=params, timeout=10)
+        print(f"[KDCA] HTTP status: {res.status_code}")
+        print(f"[KDCA] 응답 내용: {res.text[:500]}")
         data = res.json()
         items = data.get("data", [])
         icon_map = {"인플루엔자": "🤧", "코로나": "😷", "폐렴": "🫁", "장염": "🤢", "결막염": "👁️", "수족구": "🖐️", "노로": "🤮", "백일해": "😮‍💨"}
